@@ -1,0 +1,29 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "October 2023 - Currently",
+    title: "Software Engineer",
+    company: "Indra",
+    description:
+      "Worked with international teams on ticketing systems for the transportation sector. Focused on embedded software development for contactless systems, based in C++. Contributed to the design and implementation of robust and efficient solutions for large-scale public transit systems.",
+  },
+  {
+    date: "April 2023 - August 2023",
+    title: "Internship",
+    company: "Naranjo Intelligent Solutions",
+    description:
+      "Participated in the development and maintenance of business management web applications. Gained hands-on experience with technologies such as HTML, CSS, Django, and Python, contributing to the improvement and optimization of enterprise-level solutions.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
