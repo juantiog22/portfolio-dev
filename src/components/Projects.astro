@@ -6,18 +6,25 @@ import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import Python from "./icons/python.astro"
 import Django from "./icons/django.astro"
+import CPP from "./icons/c.astro"
+
 
 const TAGS = {
-  NEXT: {
+  PYTHON: {
     name: "Python",
-    class: "bg-black text-white",
+    class: "bg-[#306998] text-white",
     icon: Python,
   },
-  TAILWIND: {
+  DJANGO: {
     name: "Django",
-    class: "bg-[#003159] text-white",
+    class: "bg-[#092E20] text-white",
     icon: Django,
   },
+  CPP: {
+    name: "C++",
+    class: "bg-[#00599C] text-white",
+    icon: CPP,
+  }
 }
 const PROJECTS = [
   {
@@ -26,15 +33,15 @@ const PROJECTS = [
       "Development of a conversational agent that allows for the collection of data collection of data related to people's well-being in the aftermath of the pandemic.",
     github: "https://github.com/juantiog22/Thesis",
     image: "/projects/postcovid-ai.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.PYTHON, TAGS.DJANGO],
   },
   {
-    title: "POSTCOVID-AI Chatbot - Facilitating data collection from people level human behaviour",
+    title: "Image Filter Magic",
     description:
-      "Development of a conversational agent that allows for the collection of data collection of data related to people's well-being in the aftermath of the pandemic.",
-    link: "https://github.com/juantiog22/Thesis",
-    image: "/projects/postcovid-ai.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Dynamic image processing tool that transforms photos using powerful mathematical operations on individual pixels. Allows users to creatively enhance their images while diving into the fascinating world of pixel-level manipulation. Perfect for those who love to explore the intersection of programming and visual art!",
+    github: "https://github.com/juantiog22/ImageProcessing",
+    image: "/projects/negative.jpg",
+    tags: [TAGS.CPP],
   },
 ]
 ---

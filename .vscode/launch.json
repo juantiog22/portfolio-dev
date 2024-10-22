@@ -6,6 +6,25 @@
       "name": "Development server",
       "request": "launch",
       "type": "node-terminal"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/jdrgj/OneDrive/Escritorio/UNI/5º/ED/practicas/p3/ej03_tdas_letras/ej03_tdas_letras/estudiante/src",
+      "program": "c:/Users/jdrgj/OneDrive/Escritorio/UNI/5º/ED/practicas/p3/ej03_tdas_letras/ej03_tdas_letras/estudiante/src/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
     }
   ]
 }
